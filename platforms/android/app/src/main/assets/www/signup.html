@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sign up for registration">
+	<meta name="author" content="Alauddin">
+	
+	<!-- Semantic UI -->
+	<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+	
+	<style>
+	body{
+		background-color: #a8a8a8;
+	}
+	
+	.main.container {
+		margin-top: 5em;
+	}
+	</style>
+</head>
+<body>
+	<div class="ui main text container">
+		<div class="ui attached message">
+			<div class="header">Register Now!</div>
+			<p>Fill out the form below to sign-up</p>
+		</div>
+		<form class="ui attached fluid segment form" id="register-form">
+			<div class="field">
+				<label for="fullname">Email</label>
+				<div class="ui left icon input">
+					<input type="email" id="email" name="email" value="">
+					<i class="envelope icon"></i>
+				</div>
+				<div class="ui pointing red basic label" id="emailErr" style="display: none;"></div>
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<div class="ui left icon input">
+					<input type="password" id="password" name="password" value="">
+					<i class="lock icon"></i>
+				</div>
+				<div class="ui pointing red basic label" id="passErr" style="display: none;"></div>
+			</div>
+			<div class="field">
+				<label>Confirm Password</label>
+				<div class="ui left icon input">
+					<input type="password" name="confirm_password" id="confirm_password" value="">
+					<i class="lock icon"></i>
+				</div>
+				<div class="ui pointing red basic label" id="confpassErr" style="display: none;"></div>
+			</div>
+			<div class="ui red message" id="message" style="display: none; visibility: hidden;"></div>
+			<div class="inline field">
+				<div class="ui checkbox">
+					<input type="checkbox" id="agree">
+					<label>I agree to the <a target="_blank" href="terms.html">terms and conditions</a></label>
+				</div>
+			</div>
+			<button class="ui blue submit button" type="submit" id="submit">Register</button>
+			<div class="ui negative message" hidden id="terms-error">
+				<i class="close icon"></i>
+				<div class="header">
+					You have to agree the terms and agreements
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="home"><!-- To homepage -->
+		<p style="text-align: center;"><a href="index.html" class="lead">Home</a></p>
+	</div>
+    
+	<script src="cordova.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="js/signup.js"></script>
+ 
+</body>
+</html>

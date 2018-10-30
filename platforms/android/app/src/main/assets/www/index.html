@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>Ezi2Eat</title>
+	<meta name="description" content="Ezi2Eat is food delivery service.">
+	<meta name="keywords" content="">
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+	<style>
+	#grid {
+		margin-top: 5em;
+	}
+	</style>
+</head>
+<body>
+	<div data-role="page">
+		<div data-role="header">
+            <h2>Header</h2>
+        </div>
+        
+		<div data-role="main">
+			<div class="ui-grid-a" id="grid">
+				<div class="ui-block-a" >
+					<a href="#login"class="ui-btn" data-transition="slideup" data-theme="a">Login</a>
+				</div>
+				<div class="ui-block-b">
+					<a href="#" class="ui-btn">Signup</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div data-role="page" data-dialog="true" id="login">
+		<div data-role="header">
+			<h1>Log In</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<form id="loginForm">
+				<input type="email" id="email" placeholder="Email">
+				<input type="password" id="password" placeholder="Password">
+				<input type="submit" value="Login" class="ui-inline-btn">
+			</form>
+		</div>
+	</div>
+    <!-- All javascripts -->
+    <script src="cordova.js"></script>
+	<script src="js/index.js"></script>
+</body>
+</html>

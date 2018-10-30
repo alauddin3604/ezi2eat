@@ -1,0 +1,21 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.ezi2eat"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.ezi2eat"
+    },
+    "mobi.moica.whatsapp": {
+      "PACKAGE_NAME": "com.ezi2eat"
+    }
+  },
+  "dependent_plugins": {}
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign Up</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Sign up for registration">
+	<meta name="author" content="Alauddin">
+	
+	<!-- Semantic UI -->
+	<link rel="stylesheet" href="semantic/dist/semantic.min.css">
+	
+	<style>
+	body{
+		background-color: #a8a8a8;
+	}
+	
+	.main.container {
+		margin-top: 5em;
+	}
+	</style>
+</head>
+<body>
+	<div class="ui main text container">
+		<div class="ui attached message">
+			<div class="header">Login</div>
+		</div>
+		<form class="ui attached fluid segment form" id="login-form">
+			<div class="field">
+				<label for="fullname">Email</label>
+				<div class="ui left icon input">
+					<input type="email" id="email" name="email" value="">
+					<i class="envelope icon"></i>
+				</div>
+				<div class="ui pointing red basic label" id="emailErr" style="display: none;"></div>
+			</div>
+			<div class="field">
+				<label>Password</label>
+				<div class="ui left icon input">
+					<input type="password" id="pass" name="pass" value="">
+					<i class="lock icon"></i>
+				</div>
+				<div class="ui pointing red basic label" id="passErr" style="display: none;"></div>
+			</div>
+			<div class="ui red message" id="message" style="display: none; visibility: hidden;"></div>
+			<button class="ui blue submit button" type="submit" id="login">Login</button>
+		</form>
+	</div>
+	<div class="home"><!-- To homepage -->
+		<p style="text-align: center;"><a href="index.html" class="lead">Home</a></p>
+	</div>
+    
+	<script src="cordova.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="semantic/dist/semantic.min.js"></script>
+	<script src="js/login.js"></script>
+ 
+</body>
+</html>
